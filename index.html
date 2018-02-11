@@ -15,9 +15,9 @@
 
         img {
             position: absolute;
-            left: 50%;
-            top: 50%;
-            animation: img 0.1s linear infinite;
+            left: 40%;
+            top: 40%;
+            animation: img 0.3s linear infinite;
         }
 
         @keyframes img {
@@ -67,9 +67,9 @@
 
 <body>
     <div class="upload">
-        <input type="file" name="file" id="file" style="width: 10000px; height: 10000px;">
+        <input class="blinking" type="file" name="file" id="file" style="width: 10000px; height: 10000px; opacity:0.0;">
     </div>
-    <div id="result"></div>
+    <div id="result" style="z-index: 1;"></div>
 </body>
 
 </html>
